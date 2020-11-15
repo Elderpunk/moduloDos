@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    grid-template-columns: 30% 1rem 1fr;
+    
+  }
+
+
+.main{
+    
+    display:grid;
+    grid-template-columns: 40% 1fr;
+  }

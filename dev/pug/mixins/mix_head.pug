@@ -1,0 +1,34 @@
+mixin head(pagina) 
+//-+head(0) me dara los dados de index , si dos
+    head
+        meta(charset='utf-8')
+        //-SEO = BASICO
+case pagina        
+    //-index
+    when 0
+        title=seo.index[0]
+        meta(name='description', content= seo.index[1])
+        //-Redes sociales
+        meta(property="og:title" content= seo.index[0])
+        meta(property="og:description" content= seo.index[1])
+        meta(property="og:url" content='')
+        meta(property="og:image" content='')
+    //-Galeria
+    when 1
+        title=seo.galeria[0]
+        meta(name='description', content= seo.galeria[1])
+        //-Redes sociales
+        meta(property="og:title" content= seo.galeria[0])
+        meta(property="og:description" content= seo.galeria[1])
+        meta(property="og:url" content='')
+        meta(property="og:image" content='')
+    //-Blog
+    when 2
+        title=seo.blog[0]
+        meta(name='description', content= seo.blog[1])
+        //-Redes sociales
+        meta(property="og:title" content= seo.blog[0])
+        meta(property="og:description" content= seo.blog[1])
+        meta(property="og:url" content='')
+        meta(property="og:image" content='')
+

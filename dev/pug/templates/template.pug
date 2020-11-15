@@ -1,0 +1,23 @@
+include ..//config/config
+
+<!DOCTYPE html>
+html(lang="es")
+
+    //-HEAD
+    include head.pug
+
+        //-Body
+        body.body
+            block body
+        //-Header
+        header.header
+        include header.pug
+
+        //-MAIN
+        main.main
+            block main   
+
+        //-Footer
+
+        footer.footer   
+              include footer.pug
